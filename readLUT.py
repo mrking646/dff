@@ -40,11 +40,7 @@ def get_all_duts(LUT_path) -> Dict[str, List]:
                 description = f"W_{width}_L_{length}_{fet_type}"
                 
                 # Add the DUT data to the dictionary
-                dut_data[dut_name] = [cycle_value, description]
+                dut_data[cycle_value] = [dut_name, description]
     return dut_data
 
-duts = get_all_duts(file_path)
-for dut_name, (cycle_value, description) in duts.items():
-    print(f"DUT Name: {dut_name}")
-    print(f"  Cycle Value: {cycle_value}")
-    print(f"  Description: {description}")
+

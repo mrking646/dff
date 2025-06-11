@@ -1,6 +1,6 @@
 class Config:
     def __init__(self):
-        self.arduino_port = "/dev/ttyACM0"
+        self.arduino_port = "COM4"
         self.B1500_address = "GPIB0::18::INSTR"
         self.LUT_path = 'NFET_LUT.ods'  # Path to the Look-Up Table file
 
