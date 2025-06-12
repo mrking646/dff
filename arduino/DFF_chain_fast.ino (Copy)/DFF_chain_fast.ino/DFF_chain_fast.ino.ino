@@ -19,7 +19,7 @@ void loop() {
     input.trim(); // Remove whitespace/newlines
 
     int pulseCount = input.toInt();  // Convert to integer (0 if invalid)
-    if pulseCount ==0 {
+    if (pulseCount ==0) {
       resetShiftRegister();
        // only reset
       Serial.println("Only reset.");
@@ -36,6 +36,7 @@ void loop() {
       for (int i = 0; i < 512; i++) {
         loadFirstOne(); // Shift out 512 pulses
       }
+      Serial.println("all 1!.");
     } 
     else if (pulseCount > 0 && pulseCount < 513) {
       Serial.print("Pulse count received: ");
