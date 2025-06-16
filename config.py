@@ -37,8 +37,8 @@ class Config:
 
         self.sweepTimingSet = self.SweepTiming(
             hold = 0.5,
-            delay = 0.2,
-            step_delay=0.5,
+            delay = 0.05,
+            step_delay=0.05,
         )
 
 

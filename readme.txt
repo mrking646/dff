@@ -45,3 +45,5 @@
 
     
 4. run "python main.py" in cmd, you will see new datalog file showed up, if no, debug.
+
+5. in case of download new firmware of Arduino, please refer to the readme.txt in /arduino/readme.txt
